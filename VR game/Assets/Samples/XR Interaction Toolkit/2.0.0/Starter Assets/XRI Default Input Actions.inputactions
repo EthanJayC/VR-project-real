@@ -276,17 +276,6 @@
                 },
                 {
                     "name": "",
-                    "id": "b8edee81-6779-4aa8-89cd-29b149a8f55e",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Teleport Mode Activate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "b8aebee7-fa03-43d4-bfb7-77a3f87452cc",
                     "path": "<XRController>{LeftHand}/gripPressed",
                     "interactions": "",
@@ -303,17 +292,6 @@
                     "interactions": "Sector(directions=-1,sweepBehavior=3)",
                     "processors": "",
                     "groups": "Noncontinuous Move",
-                    "action": "Teleport Select",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "14a27f53-867e-4d15-92d9-3e36deb55b1b",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
                     "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -999,6 +977,34 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI Spawn",
+            "id": "eedb3e45-9cb1-4e27-a99f-a7ad7019c876",
+            "actions": [
+                {
+                    "name": "Toggle UI",
+                    "type": "Button",
+                    "id": "718a0dad-0075-46a5-a0f6-2bca0e4294fd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "687bc1b6-8b8d-4607-9412-d088423b50ec",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toggle UI",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
