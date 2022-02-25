@@ -9,14 +9,17 @@ public class ButtonVR : MonoBehaviour
     public UnityEvent onPress;
     public UnityEvent onRelease;
     GameObject presser;
-    public AudioSource Sound;
+    public AudioSource Speaker;
     bool isPressed;
+    int clipCount;
+
+    public AudioClip[] clips;
 
     void Start()
     {
-        Sound = gameObject.GetComponent<AudioSource>();
-        Debug.Log(Sound.gameObject);
+        Speaker = gameObject.GetComponent<AudioSource>();
         isPressed = false;
+        clipCount = 0;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +29,13 @@ public class ButtonVR : MonoBehaviour
             button.transform.localPosition = new Vector3(0, 0.003f, 0);
             presser = other.gameObject;
             onPress.Invoke();
-            Sound.Play();
+
+            if (!Speaker.isPlaying)
+            {
+                Speaker.clip = clips[clipCount];
+                Speaker.Play();
+                clipCount++;
+            }
             isPressed = true;
         }
     }
