@@ -9,13 +9,14 @@ public class ButtonVR : MonoBehaviour
     public UnityEvent onPress;
     public UnityEvent onRelease;
     GameObject presser;
-    AudioSource Sound;
+    public AudioSource Sound;
     bool isPressed;
 
     void Start()
     {
-        //sound GetComponent<AudioSource>();
-        //isPressed = false;
+        Sound = gameObject.GetComponent<AudioSource>();
+        Debug.Log(Sound.gameObject);
+        isPressed = false;
     }
 
     private void OnTriggerEnter(Collider other)
