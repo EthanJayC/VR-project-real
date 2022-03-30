@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.59937435, g: 0.5997503, b: 0.5994879, a: 1}
+  m_IndirectSpecularColor: {r: 0.59937525, g: 0.5997512, b: 0.59948856, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -175,8 +175,10 @@ MonoBehaviour:
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
   m_WidthCurve:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -184,7 +186,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 1
       inSlope: 0
       outSlope: 0
@@ -196,46 +199,15 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_ValidColorGradient:
-    key0:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    key1:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    key2:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key3:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key4:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key5:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key6:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key7:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    serializedVersion: 2
+    key0: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key1: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key2: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key3: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key4: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key5: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key6: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key7: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
     ctime0: 0
     ctime1: 65535
     ctime2: 0
@@ -256,46 +228,15 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
-    key0:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    key1:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    key2:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key3:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key4:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key5:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key6:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key7:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    serializedVersion: 2
+    key0: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key1: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key2: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key3: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key4: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key5: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key6: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key7: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
     ctime0: 0
     ctime1: 65535
     ctime2: 0
@@ -320,21 +261,6 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
-  m_ReticlePos: {x: 0, y: 0, z: 0}
-  m_ReticleNormal: {x: 0, y: 0, z: 0}
-  m_EndPositionInLine: 0
-  m_SnapCurve: 1
-  m_PerformSetup: 0
-  m_ReticleToUse: {fileID: 0}
-  m_LineRenderer: {fileID: 0}
-  m_TargetPoints: []
-  m_NoTargetPoints: -1
-  m_RenderPoints: []
-  m_NoRenderPoints: -1
-  m_PreviousRenderPoints: []
-  m_NoPreviousRenderPoints: -1
-  m_CustomReticle: {fileID: 0}
-  m_CustomReticleAttached: 0
 --- !u!120 &61530501
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -447,49 +373,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 87594571}
   m_InteractionLayerMask:
+    serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-    m_Mask: -1
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
-  m_AllowHover: 1
-  m_AllowSelect: 1
-  m_IsPerformingManualInteraction: 0
-  m_RegisteredInteractionManager: {fileID: 0}
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 0
   m_AllowHoveredActivate: 0
@@ -523,12 +437,6 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_AllowActivate: 1
-  m_Controller: {fileID: 0}
-  m_ToggleSelectActive: 0
-  m_ToggleSelectDeactivatedThisFrame: 0
-  m_WaitingForSelectDeactivate: 0
-  m_EffectsAudioSource: {fileID: 0}
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
@@ -546,6 +454,7 @@ MonoBehaviour:
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
   m_RaycastMask:
+    serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
@@ -557,14 +466,6 @@ MonoBehaviour:
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
   m_AnchorRotateReferenceFrame: {fileID: 0}
-  m_InputModule: {fileID: 0}
-  m_RegisteredInputModule: {fileID: 0}
-  m_LastTimeHoveredObjectChanged: 0
-  m_PassedHoverTimeToSelect: 0
-  m_RaycastHitsCount: 0
-  m_SamplePointsFrameUpdated: -1
-  m_RaycastHitEndpointIndex: 0
-  m_UIRaycastHitEndpointIndex: 0
 --- !u!114 &61530503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,48 +487,6 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
-  m_HideControllerModel: 0
-  m_SelectInteractionState:
-    m_Value: 0
-    m_Active: 0
-    m_ActivatedThisFrame: 0
-    m_DeactivatedThisFrame: 0
-  m_ActivateInteractionState:
-    m_Value: 0
-    m_Active: 0
-    m_ActivatedThisFrame: 0
-    m_DeactivatedThisFrame: 0
-  m_UIPressInteractionState:
-    m_Value: 0
-    m_Active: 0
-    m_ActivatedThisFrame: 0
-    m_DeactivatedThisFrame: 0
-  m_ControllerState:
-    time: 0
-    inputTrackingState: 0
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    selectInteractionState:
-      m_Value: 0
-      m_Active: 0
-      m_ActivatedThisFrame: 0
-      m_DeactivatedThisFrame: 0
-    activateInteractionState:
-      m_Value: 0
-      m_Active: 0
-      m_ActivatedThisFrame: 0
-      m_DeactivatedThisFrame: 0
-    uiPressInteractionState:
-      m_Value: 0
-      m_Active: 0
-      m_ActivatedThisFrame: 0
-      m_DeactivatedThisFrame: 0
-  m_CreateControllerState: 1
-  m_ModelAnimator: {fileID: 0}
-  m_HasWarnedAnimatorMissing: 0
-  m_PerformSetup: 1
-  <anchorControlDeadzone>k__BackingField: 0
-  <anchorControlOffAxisDeadzone>k__BackingField: 0
   m_PositionAction:
     m_UseReference: 1
     m_Action:
@@ -784,8 +643,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
-  m_HasCheckedDisabledTrackingInputReferenceActions: 0
-  m_HasCheckedDisabledInputReferenceActions: 0
   m_ButtonPressPoint: 0.5
 --- !u!1 &87594570
 GameObject:
@@ -908,14 +765,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 1832587417}
-  <TrackablesParent>k__BackingField: {fileID: 0}
   m_OriginBaseGameObject: {fileID: 294241289}
   m_CameraFloorOffsetObject: {fileID: 151937108}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
-  <CurrentTrackingOriginMode>k__BackingField: 0
-  m_CameraInitialized: 0
-  m_CameraInitializing: 0
 --- !u!4 &294241291
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,96 +896,75 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 87594571}
   m_Colliders: []
   m_InteractionLayerMask:
+    serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-    m_Mask: 1
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_LastHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
-  m_RegisteredInteractionManager: {fileID: 0}
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnLastHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectCanceled:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnActivate:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,8 +1094,6 @@ MonoBehaviour:
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
-  m_CurrentTurnAmount: 0
-  m_TimeStarted: 0
   m_LeftHandSnapTurnAction:
     m_UseReference: 0
     m_Action:
@@ -1301,7 +1131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1377707395}
-  <validRequest>k__BackingField: 0
 --- !u!114 &1377707395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1314,8 +1143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CurrentExclusiveProvider: {fileID: 0}
-  m_TimeMadeExclusive: 0
   m_Timeout: 10
   m_XROrigin: {fileID: 0}
 --- !u!4 &1377707396
@@ -1369,89 +1196,69 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 87594571}
   m_Colliders: []
   m_InteractionLayerMask:
+    serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 1
-    m_Mask: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_LastHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
-  m_RegisteredInteractionManager: {fileID: 0}
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnLastHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectCanceled:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnActivate:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
   m_MovementType: 0
@@ -1470,8 +1277,10 @@ MonoBehaviour:
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
+    serializedVersion: 2
     m_Curve:
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 1
       inSlope: 0
       outSlope: 0
@@ -1487,28 +1296,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
-  m_InteractorLocalPosition: {x: 0, y: 0, z: 0}
-  m_InteractorLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-  m_TargetWorldPosition: {x: 0, y: 0, z: 0}
-  m_TargetWorldRotation: {x: 0, y: 0, z: 0, w: 0}
-  m_CurrentAttachEaseTime: 0
-  m_CurrentMovementType: 0
-  m_DetachInLateUpdate: 0
-  m_DetachVelocity: {x: 0, y: 0, z: 0}
-  m_DetachAngularVelocity: {x: 0, y: 0, z: 0}
-  m_ThrowSmoothingCurrentFrame: 0
-  m_Rigidbody: {fileID: 0}
-  m_LastPosition: {x: 0, y: 0, z: 0}
-  m_LastRotation: {x: 0, y: 0, z: 0, w: 0}
-  m_WasKinematic: 0
-  m_UsedGravity: 0
-  m_OldDrag: 0
-  m_OldAngularDrag: 0
-  m_OriginalSceneParent: {fileID: 0}
-  m_TeleportationProvider: {fileID: 0}
-  m_PoseBeforeTeleport:
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!54 &1661913927
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1915,10 +1702,6 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
-  m_CurrentPosition: {x: 0, y: 0, z: 0}
-  m_CurrentRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_RotationBound: 0
-  m_PositionBound: 0
   m_PositionAction:
     m_Name: 
     m_Type: 0
@@ -2039,8 +1822,10 @@ MonoBehaviour:
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
   m_WidthCurve:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 1
       inSlope: 0
       outSlope: 0
@@ -2048,7 +1833,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 1
       inSlope: 0
       outSlope: 0
@@ -2060,46 +1846,15 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_ValidColorGradient:
-    key0:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    key1:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    key2:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key3:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key4:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key5:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key6:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key7:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    serializedVersion: 2
+    key0: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key1: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key2: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key3: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key4: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key5: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key6: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key7: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
     ctime0: 0
     ctime1: 65535
     ctime2: 0
@@ -2120,46 +1875,15 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
-    key0:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    key1:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    key2:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key3:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key4:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key5:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key6:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
-    key7:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    serializedVersion: 2
+    key0: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key1: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key2: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key3: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key4: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key5: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key6: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
+    key7: {r: 0.5019608, g: 0.9411765, b: 0.49803922, a: 0.24705882}
     ctime0: 0
     ctime1: 65535
     ctime2: 0
@@ -2184,21 +1908,6 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
-  m_ReticlePos: {x: 0, y: 0, z: 0}
-  m_ReticleNormal: {x: 0, y: 0, z: 0}
-  m_EndPositionInLine: 0
-  m_SnapCurve: 1
-  m_PerformSetup: 0
-  m_ReticleToUse: {fileID: 0}
-  m_LineRenderer: {fileID: 0}
-  m_TargetPoints: []
-  m_NoTargetPoints: -1
-  m_RenderPoints: []
-  m_NoRenderPoints: -1
-  m_PreviousRenderPoints: []
-  m_NoPreviousRenderPoints: -1
-  m_CustomReticle: {fileID: 0}
-  m_CustomReticleAttached: 0
 --- !u!120 &2053451184
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2311,49 +2020,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 87594571}
   m_InteractionLayerMask:
+    serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-    m_Mask: -1
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
-  m_AllowHover: 1
-  m_AllowSelect: 1
-  m_IsPerformingManualInteraction: 0
-  m_RegisteredInteractionManager: {fileID: 0}
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnHoverExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectEntered:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 0
   m_AllowHoveredActivate: 0
@@ -2387,12 +2084,6 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_AllowActivate: 1
-  m_Controller: {fileID: 0}
-  m_ToggleSelectActive: 0
-  m_ToggleSelectDeactivatedThisFrame: 0
-  m_WaitingForSelectDeactivate: 0
-  m_EffectsAudioSource: {fileID: 0}
   m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
@@ -2410,6 +2101,7 @@ MonoBehaviour:
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
   m_RaycastMask:
+    serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
@@ -2421,14 +2113,6 @@ MonoBehaviour:
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
   m_AnchorRotateReferenceFrame: {fileID: 0}
-  m_InputModule: {fileID: 0}
-  m_RegisteredInputModule: {fileID: 0}
-  m_LastTimeHoveredObjectChanged: 0
-  m_PassedHoverTimeToSelect: 0
-  m_RaycastHitsCount: 0
-  m_SamplePointsFrameUpdated: -1
-  m_RaycastHitEndpointIndex: 0
-  m_UIRaycastHitEndpointIndex: 0
 --- !u!114 &2053451186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2450,48 +2134,6 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
-  m_HideControllerModel: 0
-  m_SelectInteractionState:
-    m_Value: 0
-    m_Active: 0
-    m_ActivatedThisFrame: 0
-    m_DeactivatedThisFrame: 0
-  m_ActivateInteractionState:
-    m_Value: 0
-    m_Active: 0
-    m_ActivatedThisFrame: 0
-    m_DeactivatedThisFrame: 0
-  m_UIPressInteractionState:
-    m_Value: 0
-    m_Active: 0
-    m_ActivatedThisFrame: 0
-    m_DeactivatedThisFrame: 0
-  m_ControllerState:
-    time: 0
-    inputTrackingState: 0
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0, w: 1}
-    selectInteractionState:
-      m_Value: 0
-      m_Active: 0
-      m_ActivatedThisFrame: 0
-      m_DeactivatedThisFrame: 0
-    activateInteractionState:
-      m_Value: 0
-      m_Active: 0
-      m_ActivatedThisFrame: 0
-      m_DeactivatedThisFrame: 0
-    uiPressInteractionState:
-      m_Value: 0
-      m_Active: 0
-      m_ActivatedThisFrame: 0
-      m_DeactivatedThisFrame: 0
-  m_CreateControllerState: 1
-  m_ModelAnimator: {fileID: 0}
-  m_HasWarnedAnimatorMissing: 0
-  m_PerformSetup: 1
-  <anchorControlDeadzone>k__BackingField: 0
-  <anchorControlOffAxisDeadzone>k__BackingField: 0
   m_PositionAction:
     m_UseReference: 1
     m_Action:
@@ -2648,6 +2290,4 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
-  m_HasCheckedDisabledTrackingInputReferenceActions: 0
-  m_HasCheckedDisabledInputReferenceActions: 0
   m_ButtonPressPoint: 0.5
