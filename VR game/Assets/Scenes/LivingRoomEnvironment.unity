@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.59937525, g: 0.5997512, b: 0.59948856, a: 1}
+  m_IndirectSpecularColor: {r: 0.599373, g: 0.599749, b: 0.5994864, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 599916903}
   - component: {fileID: 599916902}
   - component: {fileID: 599916906}
+  - component: {fileID: 599916907}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -465,6 +466,22 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!54 &599916907
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599916901}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1294,8 @@ GameObject:
   - component: {fileID: 8425451828695814954}
   - component: {fileID: 263465692786850393}
   - component: {fileID: 5340692349420733233}
+  - component: {fileID: 814172000846836389}
+  - component: {fileID: 814172000846836388}
   m_Layer: 0
   m_Name: lamp
   m_TagString: Untagged
@@ -1284,6 +1303,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &814172000846836388
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814172000846836387}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &814172000846836389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814172000846836387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919132149549685766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,6 +1440,8 @@ GameObject:
   - component: {fileID: 6221391546667062737}
   - component: {fileID: 8575179774673562342}
   - component: {fileID: 5928430331943488099}
+  - component: {fileID: 1130269394878661196}
+  - component: {fileID: 1130269394878661195}
   m_Layer: 0
   m_Name: table_n_chairs
   m_TagString: Untagged
@@ -1400,6 +1449,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &1130269394878661195
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130269394878661194}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1130269394878661196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130269394878661194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1185610159192915319
 Transform:
   m_ObjectHideFlags: 0
@@ -1433,6 +1510,8 @@ GameObject:
   - component: {fileID: 6866706672977245473}
   - component: {fileID: 4644600086803534703}
   - component: {fileID: 2821596569625541477}
+  - component: {fileID: 1604040223799345876}
+  - component: {fileID: 1604040223799345875}
   m_Layer: 0
   m_Name: sofa1
   m_TagString: Untagged
@@ -1440,6 +1519,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &1604040223799345875
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604040223799345874}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1604040223799345876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604040223799345874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &1622687082882626861
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1541,6 +1648,8 @@ GameObject:
   - component: {fileID: 3919667786436539597}
   - component: {fileID: 1212270017074511073}
   - component: {fileID: 664519710237490259}
+  - component: {fileID: 2140868936384365596}
+  - component: {fileID: 2140868936384365595}
   m_Layer: 0
   m_Name: bearskinrug
   m_TagString: Untagged
@@ -1548,6 +1657,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &2140868936384365595
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140868936384365594}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2140868936384365596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140868936384365594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &2821596569625541477
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1600,6 +1737,8 @@ GameObject:
   - component: {fileID: 3188453019821161661}
   - component: {fileID: 6378593904554070390}
   - component: {fileID: 1011548546290246147}
+  - component: {fileID: 2838913850827821349}
+  - component: {fileID: 2838913850827821348}
   m_Layer: 0
   m_Name: sofa3
   m_TagString: Untagged
@@ -1607,6 +1746,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &2838913850827821348
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838913850827821347}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2838913850827821349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838913850827821347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3188453019821161661
 Transform:
   m_ObjectHideFlags: 0
@@ -1668,6 +1835,8 @@ GameObject:
   - component: {fileID: 1185610159192915319}
   - component: {fileID: 8825571362729402336}
   - component: {fileID: 1932221739398233445}
+  - component: {fileID: 3948209450983413432}
+  - component: {fileID: 3948209450983413431}
   m_Layer: 0
   m_Name: white_rug
   m_TagString: Untagged
@@ -1675,6 +1844,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &3948209450983413431
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948209450983413430}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3948209450983413432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948209450983413430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &4251612164532266706
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1694,6 +1891,8 @@ GameObject:
   - component: {fileID: 5877704828466221017}
   - component: {fileID: 4897503093073964774}
   - component: {fileID: 8358529550295672}
+  - component: {fileID: 4398857047524183193}
+  - component: {fileID: 4398857047524183192}
   m_Layer: 0
   m_Name: bookcase
   m_TagString: Untagged
@@ -1701,6 +1900,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &4398857047524183192
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398857047524183191}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4398857047524183193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398857047524183191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &4644600086803534703
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1728,6 +1955,8 @@ GameObject:
   - component: {fileID: 6568220588765835339}
   - component: {fileID: 6697793428586106897}
   - component: {fileID: 1025952928590977421}
+  - component: {fileID: 5014412514568567032}
+  - component: {fileID: 5014412514568567031}
   m_Layer: 0
   m_Name: curtains
   m_TagString: Untagged
@@ -1735,6 +1964,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &5014412514568567031
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5014412514568567030}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5014412514568567032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5014412514568567030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &5170048590607026204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2059,6 +2316,8 @@ GameObject:
   - component: {fileID: 5647418860276600521}
   - component: {fileID: 3693246025241498706}
   - component: {fileID: 5657844699038370133}
+  - component: {fileID: 6628278517364605122}
+  - component: {fileID: 6628278517364605121}
   m_Layer: 0
   m_Name: table3
   m_TagString: Untagged
@@ -2066,6 +2325,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &6628278517364605121
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628278517364605120}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6628278517364605122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628278517364605120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &6697793428586106897
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2099,6 +2386,8 @@ GameObject:
   - component: {fileID: 9192099567784004125}
   - component: {fileID: 5600849932690713382}
   - component: {fileID: 1774748930021403709}
+  - component: {fileID: 7224765446176582186}
+  - component: {fileID: 7224765446176582185}
   m_Layer: 0
   m_Name: carpet
   m_TagString: Untagged
@@ -2106,6 +2395,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &7224765446176582185
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7224765446176582184}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7224765446176582186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7224765446176582184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7924626880474129128
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2434,8 @@ GameObject:
   - component: {fileID: 6558717776096869399}
   - component: {fileID: 4251612164532266706}
   - component: {fileID: 5321640219980941520}
+  - component: {fileID: 7924626880474129130}
+  - component: {fileID: 7924626880474129129}
   m_Layer: 0
   m_Name: rag_rug
   m_TagString: Untagged
@@ -2124,6 +2443,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &7924626880474129129
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7924626880474129128}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7924626880474129130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7924626880474129128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &8347024420180518994
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2190,6 +2537,8 @@ GameObject:
   - component: {fileID: 5416013359433048130}
   - component: {fileID: 6369484678300001637}
   - component: {fileID: 8347024420180518994}
+  - component: {fileID: 8499531392564221909}
+  - component: {fileID: 8499531392564221908}
   m_Layer: 0
   m_Name: sofa5
   m_TagString: Untagged
@@ -2197,6 +2546,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8499531392564221908
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8499531392564221907}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8499531392564221909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8499531392564221907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &8575179774673562342
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2216,6 +2593,8 @@ GameObject:
   - component: {fileID: 3308106061117473780}
   - component: {fileID: 1622687082882626861}
   - component: {fileID: 5170048590607026204}
+  - component: {fileID: 8600988095338917733}
+  - component: {fileID: 8600988095338917732}
   m_Layer: 0
   m_Name: table9
   m_TagString: Untagged
@@ -2223,6 +2602,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8600988095338917732
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600988095338917731}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8600988095338917733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600988095338917731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191c06affb1eed4180147927311143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &8825571362729402336
 MeshFilter:
   m_ObjectHideFlags: 0
