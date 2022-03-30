@@ -23,7 +23,6 @@ public class ButtonVR : MonoBehaviour
 
     void Start()
     {
-        
         Speaker = gameObject.GetComponent<AudioSource>();
         isPressed = false;
         clipCount = 0;
