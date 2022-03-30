@@ -7,14 +7,6 @@ public class BodyCollision : MonoBehaviour
     public Transform head;
     public Transform feet;
 
-    void OnCollisionStay(UnityEngine.Collision collisionInfo)
-    {
-        if (collisionInfo.gameObject.tag == "Obstacle")
-            {
-            Debug.Log("We hit an obstacle");
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
