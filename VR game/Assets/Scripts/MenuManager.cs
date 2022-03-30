@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
     }
 
     public void ChangeToForest()
@@ -20,7 +22,7 @@ public class MenuManager : MonoBehaviour
     public void ChangeToLiving()
     {
         Debug.Log("DING DONG");
-        SceneManager.LoadScene("Living Room");
+        SceneManager.LoadScene("LivingRoom");
     }
 
     public void ChangeToOffice()

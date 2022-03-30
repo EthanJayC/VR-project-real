@@ -14,6 +14,7 @@ public class ButtonVR : MonoBehaviour
     public GameObject presser;
     public AudioClip[] clips;
     public AudioSource Speaker;
+   
 
     //canvas stuff for the UI text panel
     public GameObject TextUI;
