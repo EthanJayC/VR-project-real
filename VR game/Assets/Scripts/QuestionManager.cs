@@ -1,23 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class QuestionManager : MonoBehaviour
 {
 
     public AudioClip[] clips;
     public AudioSource Speaker;
-    private Question[] questions;
+    private Dialogue[] questions;
 
     private int clipCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        Speaker = gameObject.GetComponent<AudioSource>();
-        clipCount = 0;
+        //Speaker = gameObject.GetComponent<AudioSource>();
+        //clipCount = 0;
 
-        questions = initializeQuestions();
+        questions = initializeClips();
         nextQuestion();
     }
 
@@ -33,10 +34,9 @@ public class QuestionManager : MonoBehaviour
         {
             if (clipCount <= clips.Length - 1)
             {
-                Speaker.clip = questions[clipCount].getClip();
-                Speaker.Play();
+                questions[clipCount].playClip(Speaker);
                 clipCount++;
-                Debug.Log("Next question playing!");
+                Debug.Log("Next question playing! clip count: " + clipCount);
             }
         } else {
             Debug.Log("Speaker Already in use!");
@@ -47,12 +47,11 @@ public class QuestionManager : MonoBehaviour
     {
         if (!Speaker.isPlaying)
         {
-            if (clipCount > 0)
+            if (clipCount > 1)
             {
                 clipCount--;
-                Speaker.clip = questions[clipCount].getClip();
-                Speaker.Play();
-                Debug.Log("Previous question playing!");
+                questions[clipCount].playClip(Speaker);
+                Debug.Log("Previous question playing! clip count: " + clipCount);
             }
         }
         else
@@ -61,47 +60,119 @@ public class QuestionManager : MonoBehaviour
         }
     }
 
-    private Question[] initializeQuestions()
+    private Dialogue[] initializeClips()
     {
-        Question[] tempQuestions = new Question[clips.Length];
+        Dialogue[] tempQuestions = new Dialogue[clips.Length];
 
         for(int i = 0; i < tempQuestions.Length; i++)
         {
-            tempQuestions[i] = new Question(clips[i]);
-            tempQuestions[i].setUserAnswer("option 7");
+            if (clips[i].name.Contains("question"))
+            {
+                tempQuestions[i] = new Question(clips[i], clips[i].name);
+            } else
+            {
+                tempQuestions[i] = new Dialogue(clips[i]);
+            }
         }
 
         return tempQuestions;
-    } 
+    }
+    /*
+    public void GetAnswersFile()
+    {
+        string pathorigin = @"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\";
+
+        TextReader reader = new StreamReader(@"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\Answers.txt");
+
+        int count = int.Parse(reader.ReadLine());
+        for (int i = 0; i < count; i++)
+        {
+            string pathName = reader.ReadLine();
+
+            TextWriter writer = new StreamWriter(pathorigin + pathName + ".txt");
+
+            int bound = int.Parse(reader.ReadLine());
+            string answer;
+            for (int j = 0; j < bound; j++)
+            {
+                answer = reader.ReadLine();
+                Debug.Log(answer);
+                writer.WriteLine(answer);
+            }
+
+            writer.Close();
+        }
+
+        reader.Close();
+        Debug.Log("Concluded!");
+    }*/
 }
 
-public class Question
+public class Dialogue
 {
 
-    private AudioClip questionSound;
+    protected AudioClip clip;
+
+    public Dialogue(AudioClip clip)
+    {
+        this.clip = clip;
+    }
+    public Dialogue() 
+    {
+        
+    }
+
+    public virtual void playClip(AudioSource Speaker)
+    {
+        Speaker.clip = this.clip;
+        Speaker.Play();
+    }
+
+    public AudioClip getClip()
+    {
+        return clip;
+    }
+}
+
+public class Question : Dialogue
+{
+
     private string[] answerOptions;
     private string userAnswer;
 
-    public Question (AudioClip questionSound, string[] answerOptions)
+    public Question(AudioClip clip, string pathname)
     {
-        this.questionSound = questionSound;
-        this.answerOptions = answerOptions;
-    }
-    public Question(AudioClip questionSound)
-    {
-        this.questionSound = questionSound;
+        this.clip = clip;
+        loadAnswers(pathname);
     }
 
-    public void setUserAnswer (string userAnswer)
+    public override void playClip(AudioSource Speaker)
     {
-        this.userAnswer = userAnswer; 
+        // play audio then spawn in potential answers onto answer UI
     }
-    public string getUserAnswer ()
+
+    private void loadAnswers(string pathname)
+    {
+        TextReader reader = new StreamReader(@"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\" + pathname + ".txt");
+
+        string currentLine;
+        int count = int.Parse(reader.ReadLine());
+        answerOptions = new string[count];
+
+        count = 0;
+        while ((currentLine = reader.ReadLine()) != null)
+        {
+            answerOptions[count] = currentLine;
+            count++;
+        }
+    }
+
+    public void setUserAnswer(string userAnswer)
+    {
+        this.userAnswer = userAnswer;
+    }
+    public string getUserAnswer()
     {
         return userAnswer;
-    }
-    public AudioClip getClip()
-    {
-        return questionSound;
     }
 }

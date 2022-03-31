@@ -1,0 +1,8 @@
+7
+Never stressed
+Rarely stressed
+Sometimes stressed
+Stressed most days
+Stressed all the time
+Extremely stressed
+None of these

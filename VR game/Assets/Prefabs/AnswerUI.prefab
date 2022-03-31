@@ -1199,8 +1199,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151b6cb0101dc504fafcf3c8f451300f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips: []
-  Speaker: {fileID: 0}
+  clips:
+  - {fileID: 8300000, guid: 20a58debec3755d458965caf2309a055, type: 3}
+  - {fileID: 8300000, guid: 985bbff033c40bb4f934dd81c840640e, type: 3}
+  - {fileID: 8300000, guid: 8a6fa81e803105f4db021346e630bd1e, type: 3}
+  - {fileID: 8300000, guid: cd5d0cf7185c4f242a0108a7a737a56a, type: 3}
+  - {fileID: 8300000, guid: d902bcda9ca05514bb8e16e1c540a683, type: 3}
+  - {fileID: 8300000, guid: cc004f36151aab842a90e88f261ed7fe, type: 3}
+  - {fileID: 8300000, guid: 2b005abf5cc148b40a69294ca46af8a9, type: 3}
+  - {fileID: 8300000, guid: dbb1e1f9641b62348a54c5e1fb9f6bab, type: 3}
+  - {fileID: 8300000, guid: dd7c61139ddc3064693112a3a35d82ae, type: 3}
+  - {fileID: 8300000, guid: e45efb68dcdfdac4390eab3784b395b1, type: 3}
+  - {fileID: 8300000, guid: 67ce57b6d9e20da438a22348a1981745, type: 3}
+  - {fileID: 8300000, guid: 532c77d853cc78644bba1b5980399e82, type: 3}
+  Speaker: {fileID: 87933561615406309}
 --- !u!82 &87933561615406309
 AudioSource:
   m_ObjectHideFlags: 0
