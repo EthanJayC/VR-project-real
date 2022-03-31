@@ -11,6 +11,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Forest");
     }
 
+    public void ChangeToTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void ChangeToLiving()
     {
         SceneManager.LoadScene("LivingRoom");
