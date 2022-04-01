@@ -11,6 +11,7 @@ public class QuestionManager : MonoBehaviour
     public AudioSource Speaker;
     public GameObject ToggleGroup;
     private Toggle[] toggles;
+    private string pathOrigin;
 
     public Dialogue[] questions;
     public static QuestionManager instance { get; private set; }
@@ -20,6 +21,8 @@ public class QuestionManager : MonoBehaviour
     void Start()
     {
         Debug.Log("Start called!");
+
+        pathOrigin = Directory.GetCurrentDirectory();
 
         clipCount = loadClipCount();
         questions = initializeClips();
@@ -119,8 +122,8 @@ public class QuestionManager : MonoBehaviour
     private int loadClipCount()
     {
         int fileInt;
-
-        TextReader reader = new StreamReader(@"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\clipCount.txt");
+        string filepath = pathOrigin + @"\Assets\Sounds\clipCount.txt";
+        TextReader reader = new StreamReader(filepath);
 
         fileInt = int.Parse(reader.ReadLine());
         reader.Close();
@@ -128,9 +131,8 @@ public class QuestionManager : MonoBehaviour
     }
     public void saveClipCount(int count)
     {
-        string pathName = @"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\clipCount.txt";
-
-        TextWriter writer = new StreamWriter(pathName);
+        string filepath = pathOrigin + @"\Assets\Sounds\clipCount.txt";
+        TextWriter writer = new StreamWriter(filepath);
 
         writer.WriteLine(count);
 
@@ -143,9 +145,9 @@ public class QuestionManager : MonoBehaviour
 
         saveClipCount(0);
 
-        string pathName = @"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\UserAnswers.txt";
+        string filepath = pathOrigin + @"\Assets\Sounds\UserAnswers.txt";
 
-        TextWriter writer = new StreamWriter(pathName);
+        TextWriter writer = new StreamWriter(filepath);
         string answer;
 
         for (int i = 0; i < questions.Length; i++)
@@ -221,6 +223,7 @@ public class Question : Dialogue
 
     private string[] answerOptions;
     private string userAnswer;
+    private string filepath = Directory.GetCurrentDirectory();
 
     public Question(AudioClip clip, string pathname)
     {
@@ -244,7 +247,8 @@ public class Question : Dialogue
 
     private void loadAnswers(string pathname)
     {
-        TextReader reader = new StreamReader(@"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\" + pathname + ".txt");
+        pathname = filepath + @"\Assets\Sounds\" + pathname + ".txt";
+        TextReader reader = new StreamReader(pathname);
 
         string currentLine;
         int count = int.Parse(reader.ReadLine());
