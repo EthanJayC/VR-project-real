@@ -772,7 +772,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3035101939719975992, guid: fdb6a5e21ca3b7c4a97fd9773f0c96af, type: 3}
+  - {fileID: 2100000, guid: 51ffb70af9c4293469a32a8028631ad5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6052,7 +6052,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Living room
+  m_Text: Earthquake simulator
 --- !u!222 &1441097158
 CanvasRenderer:
   m_ObjectHideFlags: 0
