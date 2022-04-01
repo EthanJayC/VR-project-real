@@ -1971,6 +1971,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Toggle
       objectReference: {fileID: 0}
+    - target: {fileID: 4437819872564135752, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4437819872564135755, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
