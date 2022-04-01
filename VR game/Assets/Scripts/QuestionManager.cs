@@ -11,20 +11,22 @@ public class QuestionManager : MonoBehaviour
     public AudioSource Speaker;
     public GameObject ToggleGroup;
     private Toggle[] toggles;
-    private Dialogue[] questions;
 
+    public Dialogue[] questions;
     public static QuestionManager instance { get; private set; }
 
     private int clipCount;
 
-    private void Start()
+    void Start()
     {
-        toggles = ToggleGroup.GetComponentsInChildren<Toggle>(true);
+        Debug.Log("Start called!");
 
-        Speaker = gameObject.GetComponent<AudioSource>();
         clipCount = loadClipCount();
-
         questions = initializeClips();
+
+        toggles = ToggleGroup.GetComponentsInChildren<Toggle>(true);
+        Speaker = gameObject.GetComponent<AudioSource>();
+
         nextQuestion();
     }
     void Awake()
@@ -37,10 +39,6 @@ public class QuestionManager : MonoBehaviour
         {
             instance = this;
         }
-    }
-    private void OnDestroy()
-    {
-        saveClipCount(clipCount);
     }
 
     public void nextQuestion()
@@ -90,6 +88,9 @@ public class QuestionManager : MonoBehaviour
                     t.gameObject.SetActive(false);
                 }
 
+                saveClipCount(clipCount);
+
+                Speaker.Stop();
                 nextQuestion();
 
                 break;
