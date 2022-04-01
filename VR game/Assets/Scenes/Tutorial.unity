@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 613309}
   - component: {fileID: 613310}
   - component: {fileID: 613308}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (11)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 27073570}
   - component: {fileID: 27073571}
   - component: {fileID: 27073569}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (7)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 97998431}
   - component: {fileID: 97998432}
   - component: {fileID: 97998430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (13)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 193793924}
   - component: {fileID: 193793925}
   - component: {fileID: 193793923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1448,7 +1448,7 @@ Transform:
   - {fileID: 761707097}
   - {fileID: 1537220294}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232524410
 GameObject:
@@ -1464,7 +1464,7 @@ GameObject:
   - component: {fileID: 232524415}
   - component: {fileID: 232524416}
   - component: {fileID: 232524414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (12)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1787,7 +1787,7 @@ GameObject:
   - component: {fileID: 358264698}
   - component: {fileID: 358264697}
   - component: {fileID: 358264696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2128,7 +2128,7 @@ GameObject:
   - component: {fileID: 511323096}
   - component: {fileID: 511323095}
   - component: {fileID: 511323094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2531,7 +2531,7 @@ RectTransform:
   m_Children:
   - {fileID: 740725428}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2552,7 +2552,7 @@ GameObject:
   - component: {fileID: 543394572}
   - component: {fileID: 543394575}
   - component: {fileID: 543394571}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (8)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -2780,7 +2780,7 @@ GameObject:
   - component: {fileID: 544449651}
   - component: {fileID: 544449650}
   - component: {fileID: 544449649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2992,7 +2992,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554952550
 GameObject:
@@ -3253,7 +3253,7 @@ GameObject:
   - component: {fileID: 571950114}
   - component: {fileID: 571950117}
   - component: {fileID: 571950113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (12)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -3481,7 +3481,7 @@ GameObject:
   - component: {fileID: 582463891}
   - component: {fileID: 582463890}
   - component: {fileID: 582463889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3793,7 +3793,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &599916906
 MonoBehaviour:
@@ -4017,7 +4017,7 @@ GameObject:
   - component: {fileID: 606516750}
   - component: {fileID: 606516753}
   - component: {fileID: 606516749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (13)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -4283,10 +4283,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin
       objectReference: {fileID: 0}
+    - target: {fileID: 4437819873027385433, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4437819873027385435, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4437819873027385435, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
@@ -4364,7 +4369,7 @@ GameObject:
   - component: {fileID: 618273573}
   - component: {fileID: 618273576}
   - component: {fileID: 618273572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (9)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -4783,7 +4788,7 @@ RectTransform:
   m_Children:
   - {fileID: 861994568}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4978,7 +4983,7 @@ RectTransform:
   m_Children:
   - {fileID: 1311163041}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4999,7 +5004,7 @@ GameObject:
   - component: {fileID: 664662235}
   - component: {fileID: 664662234}
   - component: {fileID: 664662233}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5211,7 +5216,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689686892
 GameObject:
@@ -5227,7 +5232,7 @@ GameObject:
   - component: {fileID: 689686895}
   - component: {fileID: 689686898}
   - component: {fileID: 689686894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (7)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -5681,7 +5686,7 @@ GameObject:
   - component: {fileID: 730672900}
   - component: {fileID: 730672901}
   - component: {fileID: 730672899}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (6)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -5985,7 +5990,7 @@ GameObject:
   - component: {fileID: 751171548}
   - component: {fileID: 751171549}
   - component: {fileID: 751171547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -6213,7 +6218,7 @@ GameObject:
   - component: {fileID: 761707100}
   - component: {fileID: 761707099}
   - component: {fileID: 761707098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6442,7 +6447,7 @@ GameObject:
   - component: {fileID: 783197541}
   - component: {fileID: 783197542}
   - component: {fileID: 783197540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (10)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -6670,7 +6675,7 @@ GameObject:
   - component: {fileID: 784938833}
   - component: {fileID: 784938832}
   - component: {fileID: 784938831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6899,7 +6904,7 @@ GameObject:
   - component: {fileID: 825999148}
   - component: {fileID: 825999151}
   - component: {fileID: 825999147}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (24)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -7127,7 +7132,7 @@ GameObject:
   - component: {fileID: 842733555}
   - component: {fileID: 842733558}
   - component: {fileID: 842733554}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (5)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -7718,7 +7723,7 @@ GameObject:
   - component: {fileID: 929787398}
   - component: {fileID: 929787401}
   - component: {fileID: 929787397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (10)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -7946,7 +7951,7 @@ GameObject:
   - component: {fileID: 961446799}
   - component: {fileID: 961446800}
   - component: {fileID: 961446798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (8)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -8286,7 +8291,7 @@ GameObject:
   - component: {fileID: 986658659}
   - component: {fileID: 986658660}
   - component: {fileID: 986658658}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -8618,7 +8623,7 @@ RectTransform:
   - {fileID: 718284583}
   - {fileID: 561386084}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8975,7 +8980,7 @@ GameObject:
   - component: {fileID: 1063192166}
   - component: {fileID: 1063192167}
   - component: {fileID: 1063192165}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -9203,7 +9208,7 @@ GameObject:
   - component: {fileID: 1080700255}
   - component: {fileID: 1080700256}
   - component: {fileID: 1080700254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (20)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -9526,7 +9531,7 @@ GameObject:
   - component: {fileID: 1144957559}
   - component: {fileID: 1144957560}
   - component: {fileID: 1144957558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -9866,7 +9871,7 @@ GameObject:
   - component: {fileID: 1151094624}
   - component: {fileID: 1151094625}
   - component: {fileID: 1151094623}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (19)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -10094,7 +10099,7 @@ GameObject:
   - component: {fileID: 1178443464}
   - component: {fileID: 1178443465}
   - component: {fileID: 1178443463}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (9)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -10322,7 +10327,7 @@ GameObject:
   - component: {fileID: 1194804115}
   - component: {fileID: 1194804114}
   - component: {fileID: 1194804113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10534,7 +10539,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1210528256
 GameObject:
@@ -10683,7 +10688,7 @@ GameObject:
   - component: {fileID: 1223126447}
   - component: {fileID: 1223126448}
   - component: {fileID: 1223126446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (4)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -10911,7 +10916,7 @@ GameObject:
   - component: {fileID: 1223436287}
   - component: {fileID: 1223436290}
   - component: {fileID: 1223436286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (22)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11139,7 +11144,7 @@ GameObject:
   - component: {fileID: 1228689026}
   - component: {fileID: 1228689027}
   - component: {fileID: 1228689025}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11462,7 +11467,7 @@ GameObject:
   - component: {fileID: 1268744141}
   - component: {fileID: 1268744142}
   - component: {fileID: 1268744140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11690,7 +11695,7 @@ GameObject:
   - component: {fileID: 1270100902}
   - component: {fileID: 1270100903}
   - component: {fileID: 1270100901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (17)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -11945,7 +11950,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294220449
 GameObject:
@@ -12223,7 +12228,7 @@ GameObject:
   - component: {fileID: 1383236751}
   - component: {fileID: 1383236750}
   - component: {fileID: 1383236749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12452,7 +12457,7 @@ GameObject:
   - component: {fileID: 1385220937}
   - component: {fileID: 1385220940}
   - component: {fileID: 1385220936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (21)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -12680,7 +12685,7 @@ GameObject:
   - component: {fileID: 1395157462}
   - component: {fileID: 1395157465}
   - component: {fileID: 1395157461}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (14)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -12908,7 +12913,7 @@ GameObject:
   - component: {fileID: 1414490108}
   - component: {fileID: 1414490109}
   - component: {fileID: 1414490107}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13300,7 +13305,7 @@ GameObject:
   - component: {fileID: 1428788809}
   - component: {fileID: 1428788810}
   - component: {fileID: 1428788808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (16)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -13608,7 +13613,7 @@ Transform:
   m_LocalScale: {x: 0.24, y: 1, z: 1.6}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537220293
 GameObject:
@@ -13624,7 +13629,7 @@ GameObject:
   - component: {fileID: 1537220297}
   - component: {fileID: 1537220296}
   - component: {fileID: 1537220295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14096,7 +14101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626307378
 GameObject:
@@ -14112,7 +14117,7 @@ GameObject:
   - component: {fileID: 1626307382}
   - component: {fileID: 1626307381}
   - component: {fileID: 1626307380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14672,7 +14677,7 @@ RectTransform:
   m_Children:
   - {fileID: 1040697053}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14712,7 +14717,7 @@ GameObject:
   - component: {fileID: 1686248713}
   - component: {fileID: 1686248712}
   - component: {fileID: 1686248711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15131,7 +15136,7 @@ GameObject:
   - component: {fileID: 1853523699}
   - component: {fileID: 1853523700}
   - component: {fileID: 1853523698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (18)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15359,7 +15364,7 @@ GameObject:
   - component: {fileID: 1875809870}
   - component: {fileID: 1875809873}
   - component: {fileID: 1875809869}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (11)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15587,7 +15592,7 @@ GameObject:
   - component: {fileID: 1882177591}
   - component: {fileID: 1882177592}
   - component: {fileID: 1882177590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (15)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -15894,7 +15899,7 @@ GameObject:
   - component: {fileID: 1956211800}
   - component: {fileID: 1956211801}
   - component: {fileID: 1956211799}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16122,7 +16127,7 @@ GameObject:
   - component: {fileID: 1986818766}
   - component: {fileID: 1986818765}
   - component: {fileID: 1986818764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16351,7 +16356,7 @@ GameObject:
   - component: {fileID: 2003320252}
   - component: {fileID: 2003320253}
   - component: {fileID: 2003320251}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (14)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16579,7 +16584,7 @@ GameObject:
   - component: {fileID: 2008796914}
   - component: {fileID: 2008796915}
   - component: {fileID: 2008796913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (3)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -16807,7 +16812,7 @@ GameObject:
   - component: {fileID: 2036287186}
   - component: {fileID: 2036287189}
   - component: {fileID: 2036287185}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2 (23)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -17130,7 +17135,7 @@ GameObject:
   - component: {fileID: 2115819562}
   - component: {fileID: 2115819565}
   - component: {fileID: 2115819561}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (6)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -17358,7 +17363,7 @@ GameObject:
   - component: {fileID: 2119840894}
   - component: {fileID: 2119840895}
   - component: {fileID: 2119840893}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate (2)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18049,7 +18054,7 @@ GameObject:
   - component: {fileID: 1214824005937485351}
   - component: {fileID: 1214824005937485352}
   - component: {fileID: 1214824005937485350}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18222,7 +18227,7 @@ GameObject:
   - component: {fileID: 1267581950801267747}
   - component: {fileID: 1267581950801267748}
   - component: {fileID: 1267581950801267746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crate
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18780,7 +18785,7 @@ GameObject:
   - component: {fileID: 84826986777995154}
   - component: {fileID: 1531513724802475252}
   - component: {fileID: 2925768735318669280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -18975,7 +18980,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832149485143614198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.39, y: 1.5, z: 16.68}
+  m_LocalPosition: {x: 1.38, y: 1.53, z: 16.68}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652735256441}
@@ -19743,7 +19748,7 @@ GameObject:
   - component: {fileID: 33557669908900975}
   - component: {fileID: 4478620790627402627}
   - component: {fileID: 7210048421953578133}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Locker2
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
