@@ -708,6 +708,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342854193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8292970895541435888, guid: 2acc64c518b4b964b9f7086465bb8548,
+    type: 3}
+  m_PrefabInstance: {fileID: 4437819872767814736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151b6cb0101dc504fafcf3c8f451300f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1367294972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1545,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1663074908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2112870851387277083, guid: 2acc64c518b4b964b9f7086465bb8548,
+    type: 3}
+  m_PrefabInstance: {fileID: 4437819872767814736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666308713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,6 +1881,41 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.78431374
       objectReference: {fileID: 0}
+    - target: {fileID: 3129460726534754603, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460726534754603, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871200042030, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871200042030, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1342854193}
+    - target: {fileID: 4437819871200042030, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: submit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871200042030, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestionManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871211618706, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 4437819871538709062, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1873,11 +1926,51 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 87594571}
+    - target: {fileID: 4437819871572713743, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871572713777, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871574596332, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 4437819871586910689, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 87594571}
+    - target: {fileID: 4437819871720334628, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871720334628, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819871782562712, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819872003726385, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4437819872462064217, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: m_TagString
+      value: Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 4437819872564135755, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -1948,6 +2041,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8292970895541435888, guid: 2acc64c518b4b964b9f7086465bb8548,
+        type: 3}
+      propertyPath: ToggleGroup
+      value: 
+      objectReference: {fileID: 1663074908}
     - target: {fileID: 8750756800833186761, guid: 2acc64c518b4b964b9f7086465bb8548,
         type: 3}
       propertyPath: m_Colors.m_NormalColor.b

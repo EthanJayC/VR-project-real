@@ -2,30 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour
 {
 
     public AudioClip[] clips;
     public AudioSource Speaker;
+    public GameObject ToggleGroup;
+    private Toggle[] toggles;
     private Dialogue[] questions;
+
+    public static QuestionManager instance { get; private set; }
 
     private int clipCount;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        //Speaker = gameObject.GetComponent<AudioSource>();
-        //clipCount = 0;
+        toggles = ToggleGroup.GetComponentsInChildren<Toggle>(true);
+
+        Speaker = gameObject.GetComponent<AudioSource>();
+        clipCount = loadClipCount();
 
         questions = initializeClips();
         nextQuestion();
     }
-
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+    private void OnDestroy()
+    {
+        saveClipCount(clipCount);
     }
 
     public void nextQuestion()
@@ -34,7 +49,7 @@ public class QuestionManager : MonoBehaviour
         {
             if (clipCount <= clips.Length - 1)
             {
-                questions[clipCount].playClip(Speaker);
+                questions[clipCount].playClip(Speaker, toggles);
                 clipCount++;
                 Debug.Log("Next question playing! clip count: " + clipCount);
             }
@@ -50,13 +65,35 @@ public class QuestionManager : MonoBehaviour
             if (clipCount > 1)
             {
                 clipCount--;
-                questions[clipCount].playClip(Speaker);
+                questions[clipCount].playClip(Speaker, toggles);
                 Debug.Log("Previous question playing! clip count: " + clipCount);
             }
         }
         else
         {
             Debug.Log("Speaker Already in use!");
+        }
+    }
+
+    public void submit()
+    {
+        for(int i = 0; i < toggles.Length; i++)
+        {
+            if (toggles[i].isOn)
+            {
+                questions[clipCount - 1].setUserAnswer(toggles[i].GetComponentInChildren<Text>().text);
+                
+                ToggleGroup.GetComponent<ToggleGroup>().SetAllTogglesOff(true);
+                
+                foreach (Toggle t in toggles)
+                {
+                    t.gameObject.SetActive(false);
+                }
+
+                nextQuestion();
+
+                break;
+            }
         }
     }
 
@@ -76,6 +113,48 @@ public class QuestionManager : MonoBehaviour
         }
 
         return tempQuestions;
+    }
+
+    private int loadClipCount()
+    {
+        int fileInt;
+
+        TextReader reader = new StreamReader(@"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\clipCount.txt");
+
+        fileInt = int.Parse(reader.ReadLine());
+        reader.Close();
+        return fileInt;
+    }
+    public void saveClipCount(int count)
+    {
+        string pathName = @"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\clipCount.txt";
+
+        TextWriter writer = new StreamWriter(pathName);
+
+        writer.WriteLine(count);
+
+        writer.Close();
+    }
+
+    void OnApplicationQuit()
+    {
+        Debug.Log("Quitting!");
+
+        saveClipCount(0);
+
+        string pathName = @"G:\Computer Science\Year 2\SoftwareProjects\Unity Projects\VR-project-real\VR game\Assets\Sounds\UserAnswers.txt";
+
+        TextWriter writer = new StreamWriter(pathName);
+        string answer;
+
+        for (int i = 0; i < questions.Length; i++)
+        {
+            if ((answer = questions[i].getUserAnswer()) != null)
+            {
+                writer.WriteLine("Question 1: " + answer);
+            }
+        }
+        writer.Close();
     }
     /*
     public void GetAnswersFile()
@@ -122,11 +201,13 @@ public class Dialogue
         
     }
 
-    public virtual void playClip(AudioSource Speaker)
+    public virtual void playClip(AudioSource Speaker, Toggle[] toggles)
     {
         Speaker.clip = this.clip;
         Speaker.Play();
     }
+    public virtual void setUserAnswer(string userAnswer) { }
+    public virtual string getUserAnswer() { return null; }
 
     public AudioClip getClip()
     {
@@ -146,9 +227,18 @@ public class Question : Dialogue
         loadAnswers(pathname);
     }
 
-    public override void playClip(AudioSource Speaker)
+    public override void playClip(AudioSource Speaker, Toggle[] toggles)
     {
-        // play audio then spawn in potential answers onto answer UI
+        // play question
+        // format panels onto tablet
+        Speaker.clip = this.clip;
+        Speaker.Play();
+
+        for(int i = 0; i < answerOptions.Length; i++)
+        {
+            toggles[i].gameObject.SetActive(true);
+            toggles[i].GetComponentInChildren<Text>().text = answerOptions[i];
+        }
     }
 
     private void loadAnswers(string pathname)
@@ -167,11 +257,11 @@ public class Question : Dialogue
         }
     }
 
-    public void setUserAnswer(string userAnswer)
+    public override void setUserAnswer(string userAnswer)
     {
         this.userAnswer = userAnswer;
     }
-    public string getUserAnswer()
+    public override string getUserAnswer()
     {
         return userAnswer;
     }
