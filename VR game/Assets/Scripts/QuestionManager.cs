@@ -23,7 +23,10 @@ public class QuestionManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Start called!");
+        // Gets path directory
+        // Assigns componenets and finds toggles
+        // Loads clip count (incase new scene is loaded clips don't repeat)
+        // Calls first clip to start playing
 
         pathOrigin = Directory.GetCurrentDirectory();
 
@@ -37,6 +40,8 @@ public class QuestionManager : MonoBehaviour
     }
     void Awake()
     {
+        // Singleton implementation
+
         if (instance != null && instance != this)
         {
             Destroy(this);
@@ -49,14 +54,20 @@ public class QuestionManager : MonoBehaviour
 
     public void nextQuestion()
     {
+
+        // Makes sure speaker isn't already playing
         if (!Speaker.isPlaying)
         {
+            // Makes sure there is another clip to play
             if (clipCount <= clips.Length - 1)
             {
+                // Plays next clip and calls virtual play clip function
                 questions[clipCount].playClip(Speaker, toggles);
+
+                // Diplays subtitles for this specific audio clip
                 textUI.GetComponentInChildren<Text>(true).text = subtitiles[clipCount];
+
                 clipCount++;
-                Debug.Log("Next question playing! clip count: " + clipCount);
             }
         } else {
             Debug.Log("Speaker Already in use!");
@@ -71,7 +82,6 @@ public class QuestionManager : MonoBehaviour
             {
                 clipCount--;
                 questions[clipCount].playClip(Speaker, toggles);
-                Debug.Log("Previous question playing! clip count: " + clipCount);
             }
         }
         else
@@ -82,21 +92,27 @@ public class QuestionManager : MonoBehaviour
 
     public void submit()
     {
+        // Loops through toggles to check which is activated by user
         for(int i = 0; i < toggles.Length; i++)
         {
             if (toggles[i].isOn)
             {
+                // Sets the answer to that question object as the toggles text
                 questions[clipCount - 1].setUserAnswer(toggles[i].GetComponentInChildren<Text>().text);
                 
+                //Resets toggles so they are all off
                 ToggleGroup.GetComponent<ToggleGroup>().SetAllTogglesOff(true);
                 
+                // Makes them invisible to the user
                 foreach (Toggle t in toggles)
                 {
                     t.gameObject.SetActive(false);
                 }
 
+                // Saves clip count incase scene is switched
                 saveClipCount(clipCount);
 
+                // Stops audio clip as user has already answered the question
                 Speaker.Stop();
                 nextQuestion();
 
@@ -107,6 +123,8 @@ public class QuestionManager : MonoBehaviour
 
     private Dialogue[] initializeClips()
     {
+        // If the audio file name contains question then initialize as question object otherwise dialogue object
+
         Dialogue[] tempQuestions = new Dialogue[clips.Length];
 
         for(int i = 0; i < tempQuestions.Length; i++)
@@ -125,16 +143,22 @@ public class QuestionManager : MonoBehaviour
 
     private int loadClipCount()
     {
+        // Reads txt file to find current clip count
+
         int fileInt;
         string filepath = pathOrigin + @"\Assets\Sounds\clipCount.txt";
         TextReader reader = new StreamReader(filepath);
 
         fileInt = int.Parse(reader.ReadLine());
+
         reader.Close();
+
         return fileInt;
     }
     public void saveClipCount(int count)
     {
+        // Saves clip count to txt file
+
         string filepath = pathOrigin + @"\Assets\Sounds\clipCount.txt";
         TextWriter writer = new StreamWriter(filepath);
 
@@ -145,9 +169,13 @@ public class QuestionManager : MonoBehaviour
 
     void OnApplicationQuit()
     {
+        // Saves clip count as 0 on game end
+
         Debug.Log("Quitting!");
 
         saveClipCount(0);
+
+        // Saves user's answers to text file to be stored and looked at after runtime
 
         string filepath = pathOrigin + @"\Assets\Sounds\UserAnswers.txt";
 
@@ -237,11 +265,10 @@ public class Question : Dialogue
 
     public override void playClip(AudioSource Speaker, Toggle[] toggles)
     {
-        // play question
-        // format panels onto tablet
         Speaker.clip = this.clip;
         Speaker.Play();
 
+        // formats question answers onto UI tablet for the user to select
         for(int i = 0; i < answerOptions.Length; i++)
         {
             toggles[i].gameObject.SetActive(true);
@@ -251,6 +278,8 @@ public class Question : Dialogue
 
     private void loadAnswers(string pathname)
     {
+        // Loads potential answers into this question object to be loaded onto UI tablet when needed
+
         pathname = filepath + @"\Assets\Sounds\" + pathname + ".txt";
         TextReader reader = new StreamReader(pathname);
 
